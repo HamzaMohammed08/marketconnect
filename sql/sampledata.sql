@@ -1,7 +1,4 @@
--- sampledata.sql - Sample Data for Simplified E-commerce Platform
--- This file contains sample data for the simplified marketplace which was generated on ai
 
--- Ensure we're using the correct database
 USE ecomm_platform;
 
 -- Clear existing data safely (if any)
@@ -28,9 +25,6 @@ ALTER TABLE favorites AUTO_INCREMENT = 1;
 ALTER TABLE purchase_requests AUTO_INCREMENT = 1;
 ALTER TABLE cart_items AUTO_INCREMENT = 1;
 
--- =====================================================
--- SAMPLE DATA FOR SIMPLIFIED MARKETPLACE
--- =====================================================
 
 -- Users with simplified location field
 -- Password for all users: 'password123' (properly hashed)
@@ -207,49 +201,6 @@ INSERT INTO cart_items (user_id, product_id, quantity) VALUES
 -- Success message
 SELECT 'Simplified marketplace sample data loaded successfully! Ready for casual buying and selling.' as status;
 
-/*
-=== LOGIN CREDENTIALS ===
-Password for all accounts: 'password123'
-
-Admin Accounts:
-- admin@marketplace.co.za (Sarah Naidoo)
-- mike.admin@marketplace.co.za (Michael Stevens)
-
-Regular User Accounts (All can buy AND sell):
-- thabo.molefe@gmail.com (Thabo Molefe)
-- emma.vandermerwe@outlook.com (Emma van der Merwe)
-- sipho.ndlovu@yahoo.com (Sipho Ndlovu)
-- aisha.patel@gmail.com (Aisha Patel)
-- kobus.botha@webmail.co.za (Jacobus Botha)
-- nomsa.dlamini@hotmail.com (Nomsa Dlamini)
-- priya.maharaj@gmail.com (Priya Maharaj)
-- david.mthembu@yahoo.co.za (David Mthembu)
-- fatima.abrahams@outlook.com (Fatima Abrahams)
-- johann.pretorius@telkomsa.net (Johann Pretorius)
-- lerato.motsepe@gmail.com (Lerato Motsepe)
-- tariq.hassan@mweb.co.za (Tariq Hassan)
-- chantelle.williams@vodamail.co.za (Chantelle Williams)
-- mandla.khumalo@gmail.com (Mandla Khumalo)
-
-=== SIMPLIFIED MARKETPLACE FEATURES ===
-Database includes:
-- 15 users with unified buy/sell capabilities
-- Simplified location system (single text field)
-- Casual marketplace categories and subcategories
-- Diverse everyday products with informal descriptions
-- Realistic pricing for various budgets
-- Sample transactions between users
-- Real marketplace messaging conversations
-- Favorites and cart functionality
-- Photography services and other skills
-
-All data demonstrates:
-- Unified user model (no separate buyer/seller roles)
-- Simplified location handling
-- Casual, informal marketplace functionality
-- Real-world South African context
-- Competitive pricing and product variety
-- Modern e-commerce principles with student-friendly complexity
 
 Perfect for a simplified marketplace website!
 */
