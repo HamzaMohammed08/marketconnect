@@ -36,7 +36,7 @@ $product = mysqli_fetch_assoc($result);
 // This feature tracks how many times a product page is viewed
 // It helps sellers understand how popular their products are
 // We only count views from users who are NOT the seller (to prevent self-inflation)
-// This is a simple but effective analytics feature for student marketplace
+// This is a simple but effective analytics feature for  the marketplace
 if (is_logged_in() && $_SESSION['user_id'] != $product['seller_id']) {
     // Only increment view count if the viewer is not the seller
     // This prevents sellers from artificially inflating their own view counts
