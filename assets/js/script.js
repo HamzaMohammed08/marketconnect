@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Adding...';
             this.disabled = true;
 
-            // Re-enable after 1 second (or after your AJAX call completes)
+            
             setTimeout(() => {
                 this.innerHTML = originalText;
                 this.disabled = false;
