@@ -1,14 +1,8 @@
--- Simplified E-commerce Database Schema
--- Designed for student-level projects with core marketplace functionality
--- Removes complexity while maintaining essential features
+--E-commerce Database Schema
 
 DROP DATABASE IF EXISTS ecomm_platform;
 CREATE DATABASE IF NOT EXISTS ecomm_platform;
 USE ecomm_platform;
-
--- =====================================================
--- CORE SIMPLIFIED TABLES
--- =====================================================
 
 -- Users table - unified buyer/seller model (simplified)
 CREATE TABLE users (
@@ -163,40 +157,4 @@ CREATE TABLE cart_items (
     INDEX idx_product (product_id)
 );
 
--- =====================================================
--- DATABASE STRUCTURE COMPLETE
--- =====================================================
--- 
--- To populate with sample data, run: SOURCE sampledata.sql;
 
-SELECT 'Simplified e-commerce database structure created successfully!' as status;
-
-/*
-=== SIMPLIFIED E-COMMERCE DATABASE FEATURES ===
-
-Core Tables Included:
-1. users - Unified buyer/seller model
-2. categories - Hierarchical product categorization  
-3. products - Core product listings
-4. product_images - Multiple images per product
-5. messages - User-to-user communication
-6. reviews - Product ratings and reviews
-7. favorites - User favorite products
-8. purchase_requests - Transaction handling
-9. cart_items - Shopping cart functionality
-
-Features Removed for Simplification:
-- Complex location breakdown (provinces/cities/suburbs)
-- Two-factor authentication
-- Advanced verification systems
-- Seller-specific reviews (kept only product reviews)
-- Complex payment processing
-- Advanced indexing and optimization
-
-This schema maintains all core e-commerce functionality while being
-appropriate for student-level projects and easy to understand.
-
-To add sample data:
-1. Run this file first to create the structure
-2. Then run: SOURCE sampledata.sql;
-*/
